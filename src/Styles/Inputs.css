@@ -1,0 +1,27 @@
+.CodeInput {
+    padding-block: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+}
+.CodeInput textarea {
+    display: flex;
+    background-color: white;
+    border-color: black;
+    outline: black solid 2px;
+    border-radius: 20px;
+    width: 80%;
+    height: 200px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.CodeInput textarea:hover {
+    outline: rgb(113, 112, 112) solid 2px;
+}
+
+.CodeInput textarea:focus {
+    cursor: text;
+}
