@@ -10,7 +10,7 @@ export default function Header () {
     return (
         <header>
             <div className="logo">
-                Snippets.hub
+                Snippet.hub
             </div>
             
             <div className="login">
