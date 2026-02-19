@@ -8,6 +8,8 @@ footer {
     border-top: solid 2px black;
     width: 100%;
     padding: 20px;
+
+    height: 100px;
 }
 
 footer button {

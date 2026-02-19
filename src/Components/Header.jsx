@@ -10,7 +10,7 @@ export default function Header () {
     const redirect = useNavigate()
 
     return (
-        <header>
+        <header className='container'>
             <div className="logo" onClick={() => redirect('/')}>
                 Snippet.hub
             </div>

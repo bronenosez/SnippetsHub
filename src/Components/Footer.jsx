@@ -5,7 +5,7 @@ export default function Footer () {
     const AddButtonSize = 50;
 
     return (
-        <footer>
+        <footer className="container">
             <button className="add_button">
                 <img src={AddIcon} alt="Add Button" width={AddButtonSize} height={AddButtonSize} />
             </button>

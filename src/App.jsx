@@ -9,7 +9,7 @@ function App() {
   return (
     <BrowserRouter>
       <Header />
-      <main>
+      <main className='container'>
         <Routes>
           <Route path='/' element={<Main />} />
           <Route path='/Profile' element={<Profile />} />

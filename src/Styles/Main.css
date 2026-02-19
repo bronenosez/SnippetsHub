@@ -1,3 +1,6 @@
 main {
     font-family: TildaSansBold;
+    flex-direction: column;
+    justify-content: center;
+    
 }
