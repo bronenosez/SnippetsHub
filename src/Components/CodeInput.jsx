@@ -1,4 +1,4 @@
-import "../../Styles/Inputs.css";
+import "../Styles/Inputs.css";
 
 export default function CodeInput () {
     return (

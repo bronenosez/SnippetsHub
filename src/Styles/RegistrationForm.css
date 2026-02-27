@@ -1,0 +1,11 @@
+form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    
+    row-gap: 20px;
+    background-color: aqua;
+}
+form input {
+    border: solid 1px black;
+}
