@@ -1,31 +1,31 @@
-import {useRef, useEffect} from 'react';
+
 import { useForm } from 'react-hook-form';
 import '../Styles/RegistrationForm.css';
 
 export default function RegistrationForm () {
-
-    const renderCount = useRef(0);
-    renderCount.current += 1;
-    console.log(`Компонент отрендерился ${renderCount.current} раз(а)`);
-    
     const {
         register, 
         handleSubmit,
         formState: {errors}
-        } = useForm({
-            defaultValues: {
-            firstName: 'John',
-            secondName: 'Johns'   
-            }
-        });
+    
+    } = useForm({
+        defaultValues: {
+        firstName: 'John',
+        lastName: 'Johns'   
+        }
+    });
 
 
     return (
         <form onSubmit={handleSubmit((formInfo) => {
+            /* if {
+                formInfo
+            } */
             console.log(formInfo)
         })}>
+            <h2>Регистрация</h2>
             <div className="inputDiv">
-                <p>
+                <p className='error_text'>
                     {errors.firstName?.message}
                 </p>
                 <input {...register('firstName', {required: 'Write your first name'})} 
@@ -35,17 +35,19 @@ export default function RegistrationForm () {
             </div>
             
             <div className="inputDiv">
-                <p>
+                <p className='error_text'>
                     {errors.lastName?.message}
                 </p>
-                <input {...register('secondName', {required: 'Write your second name'})} 
+                <input {...register('lastName', {required: 'Write your last name'})} 
                     type="text" 
-                    placeholder='Second Name'
+                    placeholder='Last Name'
                 />                
-                {console.log(errors)}
             </div>
 
-            <input type="submit" />
+            <input 
+                className='submitInput'
+                type="submit" 
+            />
         </form>
     )
 }
